@@ -1,0 +1,66 @@
+@import "../base.scss";
+
+.settings-container {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 7.5rem 4rem 1.5rem 4rem;
+    min-height: 100vh;
+
+    font-family: "SF Pro Text Regular";
+
+    .content {
+        display: flex;
+        flex: 1 1 auto;
+        height: 100%;
+
+        border-radius: 10px;
+
+        flex-direction: row;
+
+        .tabs {
+
+            .tab-control {
+                padding: 2rem 1.5rem 0 1.6rem;
+            }
+
+            .profile,
+            .security,
+            .invoice,
+            .notifications {
+                display: flex;
+                flex: 1 1 auto;
+                flex-direction: column;
+                height: 100%;
+                overflow: auto;
+                overflow-x: hidden;
+                overflow-y: overlay;
+                padding: 2rem 2rem 2rem 0.1rem;
+
+            }
+
+            .category {
+
+                .detail {
+
+                    .item {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.settings-container-light {
+
+    .content {
+        background-color: $white;
+
+        box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+    }
+}
+
+.settings-container-dark {
+    background-color: #d0d2d6;
+}

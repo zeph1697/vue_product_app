@@ -1,0 +1,14 @@
+@import "../base.scss";
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-container-light {
+    background-color: $Gray6Light;
+}
+
+.content-container-dark {
+    background-color: $Gray6Dark;
+}

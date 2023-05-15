@@ -1,0 +1,374 @@
+@import "../base.scss";
+@import "./machine/boot.scss";
+@import "./machine/create.scss";
+@import "./machine/detail.scss";
+@import "./messageBox/index.scss";
+
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    font-family: "SF Pro Text Regular";
+
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+
+    .popup-background {
+        border: 1px solid transparent;
+        border-radius: 10px;
+
+        .popup-container {
+            display: flex;
+            flex: 1 1 auto;
+            padding: 0.9rem 1rem;
+            flex-direction: column;
+
+            .popup-layout {
+                display: flex;
+                flex: 1 1 auto;
+            }
+        }
+
+        .popup-content {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            height: 100%;
+
+            .popup-header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 1rem;
+
+                .title {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    user-select: none;
+
+                    img {
+                        width: 1rem;
+                        height: 1rem;
+                    }
+
+                    .title-content {
+                        margin-left: 0.5rem;
+                        font-size: 0.85rem;
+                    }
+                }
+
+                .close {
+                    display: flex;
+                    width: 1.8rem;
+                    height: 1.75rem;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: -1rem;
+                    margin-right: -0.85rem;
+
+                    opacity: 0.5;
+
+                    cursor: pointer;
+
+                    border-radius: 7px;
+                    border: 1px solid transparent;
+
+                    transition: background-color 0.25s linear;
+
+                    img {
+                        width: 0.75rem;
+                        height: 0.65rem;
+                    }
+                }
+
+                .close:hover {
+                    opacity: 1;
+                }
+            }
+
+            .popup-body {
+                display: flex;
+                flex: 1 1 auto;
+                height: 1%;
+            }
+
+            .popup-footer {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .popup-promotion {
+            display: flex;
+        }
+
+        .popup-connect-machine {
+            width: 50rem;
+
+            .popup-body {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+
+                .result-description {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .popup-summary-machine {
+            width: 33rem;
+            height: 20rem;
+        }
+
+        .popup-backup-restore {
+            width: 33rem;
+            height: 20rem;
+        }
+
+        .popup-timer {
+            width: 33rem;
+            height: 20rem;
+        }
+
+        .popup-change-package {
+            width: 33rem;
+
+            .popup-body {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+
+                font-size: 0.85rem;
+
+                .description {
+                    margin-bottom: 1.5rem;
+                }
+
+                .caution {
+                    margin-top: 1.5rem;
+
+                    font-style: italic;
+                }
+
+                .result-description {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .popup-renewal {
+            width: 33rem;
+
+            .popup-body {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+
+                font-size: 0.85rem;
+
+                .description {
+                    margin-bottom: 1.5rem;
+                }
+
+                .result-description {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .popup-fixed-rental {
+            width: 33rem;
+
+            .popup-body {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+
+                font-size: 0.85rem;
+
+                .description {
+                    margin-bottom: 2rem;
+                }
+
+                .item {
+                    display: flex;
+                    flex: 1 1 auto;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 1rem;
+
+                    .item-title {
+                        display: flex;
+                        flex: 1 1 auto;
+                    }
+
+                    .loading {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+
+        .popup-clone-image {
+            width: 40rem;
+
+            .popup-body {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+
+                font-size: 0.85rem;
+
+                .description {
+                    margin-bottom: 1.5rem;
+                }
+
+                .result-description {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .popup-issues {
+            width: 50rem;
+            height: 30rem;
+        }
+    }
+}
+
+.popup-light {
+
+    .popup-background {
+        background-color: $white;
+
+        .popup-container {}
+
+        .popup-header {
+
+            .title-content {
+                color: $black;
+            }
+
+            .close {
+
+                img {
+                    filter: invert(59%) sepia(11%) saturate(38%) hue-rotate(339deg) brightness(85%) contrast(94%);
+                }
+            }
+
+            .close:hover {
+                background-color: $RedLight;
+
+                img {
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+                }
+            }
+        }
+
+        .popup-create-image {
+
+            .select-service {
+
+                .popup-body {
+
+                    .item {
+                        border: 2px solid $Gray5Light;
+
+                        .description {
+                            color: $secondaryLight;
+                        }
+                    }
+
+                    .item:hover {
+                        border: 2px solid $BlueLight;
+
+                        .title {
+                            color: $BlueLight;
+                        }
+                    }
+                }
+            }
+
+            .select-package {
+
+                .note {
+                    color: $secondaryLight;
+                }
+            }
+
+            .select-config {}
+
+            .create-confirm {
+
+                .popup-body {
+
+                    .item {
+
+                        .title {
+                            color: $secondaryLight;
+                        }
+
+                        .description {}
+                    }
+                }
+            }
+        }
+
+        .popup-fixed-rental {
+
+            .popup-body {
+
+                .description {
+                    color: $secondaryLight;
+                }
+            }
+        }
+
+        .popup-clone-image {
+
+            .popup-body {
+
+                .description {
+                    color: $secondaryLight;
+                }
+            }
+        }
+
+        .popup-renewal {
+
+            .popup-body {
+
+                .description {
+                    color: $secondaryLight;
+                }
+            }
+        }
+
+        .popup-change-package {
+
+            .popup-body {
+
+                .description {
+                    color: $secondaryLight;
+                }
+
+                .caution {
+                    color: $RedLight;
+                }
+            }
+        }
+    }
+}
+
+.popup-dark {}

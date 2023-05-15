@@ -1,0 +1,16 @@
+@import "../base.scss";
+
+.recovery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+
+    .item {
+        margin-top: 1.75rem;
+    }
+}
+
+.recovery-light {}
+
+.recovery-dark {}

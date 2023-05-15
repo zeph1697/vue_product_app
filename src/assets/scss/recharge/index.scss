@@ -1,0 +1,234 @@
+@import "../base.scss";
+
+.recharge-gateway-container {
+    padding: 7.5rem 3rem 0 3rem;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    min-height: 100vh;
+
+    font-family: "SF Pro Text Regular";
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+
+        .title {
+            display: flex;
+            justify-content: end;
+            width: 8rem;
+            margin-top: 0.5rem;
+
+            font-size: 0.85rem;
+
+            user-select: none;
+        }
+
+        .content {
+            display: flex;
+            flex: 1 1 auto;
+            margin-left: 2rem;
+            flex-direction: column;
+
+            .promotion-item {
+                position: relative;
+                margin-right: 1.25rem;
+                width: 7rem;
+                height: 8rem;
+
+                user-select: none;
+
+                .promotion-text {
+                    color: rgba(130, 130, 130, 0.85);
+                    font-size: 0.85rem;
+                }
+
+                .amount-from {
+                    margin-top: 1rem;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                }
+
+                .promotion-main-percent {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+
+            .promotion-item:hover {
+
+                .amount-from {}
+            }
+
+            .method-item {
+                position: relative;
+                margin-right: 1.25rem;
+                width: 9rem;
+                height: 5rem;
+
+                user-select: none;
+            }
+
+            .radio-item-label {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                z-index: 9;
+
+                cursor: pointer;
+            }
+
+            .radio-item-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                margin-right: 1.25rem;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                z-index: 5;
+
+                background-color: $white;
+
+                border: 2px solid transparent;
+                border-radius: 10px;
+
+                transition: color 0.25s linear;
+                transition: background-color 0.25s linear;
+                transition: border-color 0.25s linear;
+                -webkit-transition: color 0.25s linear;
+                -webkit-transition: background-color 0.25s linear;
+                -webkit-transition: border-color 0.25s linear;
+            }
+
+            .radio-item-label:hover~.radio-item-content {
+                opacity: 1;
+            }
+
+            input[type=radio] {
+                position: absolute;
+                visibility: hidden;
+            }
+
+            input[type=radio]:checked~.radio-item-content {}
+
+            input[type=text] {
+                width: 6rem;
+                padding: 0.5rem 0.75rem;
+                display: inline-block;
+                border: 1px solid transparent;
+                outline: 2px solid transparent;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            input[type=text]::placeholder {
+                font: 0.85rem;
+            }
+
+            .error {
+                line-height: 1rem;
+                border: 2px solid transparent;
+                width: 30rem;
+                padding: 0.85rem 1rem;
+                font-size: 0.85rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.recharge-gateway-container-light {
+    color: black;
+
+    .item {
+
+        .title {
+            color: $secondaryLight;
+        }
+
+        .content {
+
+            .promotion-item {
+
+                .amount-from {
+                    color: $GreenLight;
+                }
+
+                .promotion-main-percent {
+                    color: $OrangeLight;
+                }
+            }
+
+            .radio-item-content {
+                box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+            }
+
+            .radio-item-label:hover~.radio-item-content {}
+
+            .method-item {}
+
+            input[type=radio]:checked~.radio-item-content {
+
+                opacity: 1;
+
+                border-color: $BlueLight;
+            }
+
+            input[type=text]:focus-visible {
+                outline-color: $BlueDark;
+            }
+
+            .error {
+                border-color: $OrangeLight;
+                color: $OrangeLight;
+                background-color: #FFF5E8;
+            }
+        }
+    }
+}
+
+.recharge-gateway-container-dark {
+    color: #d0d2d6;
+
+    .item {
+
+        .title {
+            color: $secondaryDark;
+        }
+
+        .content {
+
+            .promotion-item {
+
+                .amount-from {
+                    color: $GreenDark;
+                }
+            }
+
+            .promotion-item:hover {
+
+                .amount-from {}
+            }
+
+            .method-item {}
+
+            input[type=radio]:checked~.radio-item-content {
+
+                opacity: 1;
+
+                background-color: $BlueDark;
+            }
+
+            .error {
+                border-color: $OrangeDark;
+                color: $OrangeDark;
+                background-color: #FFF6E9;
+            }
+        }
+    }
+}

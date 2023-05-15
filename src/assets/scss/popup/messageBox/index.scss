@@ -1,0 +1,63 @@
+@import "@/assets/scss/base.scss";
+
+.popup-container.popup-message-box {
+    padding: 1.2rem 1.5rem;
+}
+
+.popup-message-box {
+    display: flex;
+    flex: 1 1 auto;
+    width: 37.5rem;
+
+    img {
+        margin: 0.4rem 1.5rem 0 0.5rem;
+        width: 5.5rem;
+        height: 5rem;
+
+        object-fit: fill;
+
+        opacity: 0.25;
+    }
+
+    .popup-body {
+        flex-direction: row;
+    }
+
+    .popup-footer {
+        margin-top: 1rem;
+    }
+
+    .title,
+    .description {
+        font-size: 0.85rem;
+    }
+
+    .title {
+        margin-bottom: 0.5rem;
+
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .description {
+        font-size: 0.85rem;
+    }
+}
+
+.popup-message-box-light {
+
+    .title {
+        color: $black;
+    }
+
+    .description {
+        color: $black;
+    }
+}
+
+.popup-message-box-dark {
+
+    .title {}
+
+    .description {}
+}

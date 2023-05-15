@@ -1,0 +1,16 @@
+@import "../base.scss";
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+
+    .item {
+        margin-top: 1.5rem;
+    }
+}
+
+.login-light {}
+
+.login-dark {}

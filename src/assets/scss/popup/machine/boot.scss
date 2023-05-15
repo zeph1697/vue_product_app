@@ -1,0 +1,59 @@
+@import "@/assets/scss/base.scss";
+
+.popup-boot-machine {
+    display: flex;
+    flex: 1 1 auto;
+    width: 33rem;
+
+    .popup-body {
+        flex-direction: column;
+
+        img {
+            height: 6rem;
+            opacity: 0.25;
+            align-items: center
+        }
+
+        .detail {
+            display: flex;
+            flex: 1 1 auto;
+            padding: 0.35rem 0;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 1rem;
+            height: 6rem;
+
+            .name {
+                font-size: 1rem
+            }
+
+            .info {
+                font-size: 0.8rem;
+            }
+
+            .action {
+                height: 1.6rem
+            }
+        }
+    }
+
+    .popup-footer {
+        margin-top: 1rem;
+    }
+}
+
+.popup-boot-machine-light {
+
+    .detail {
+
+        .name {
+            color: $black;
+        }
+
+        .info {
+            color: $secondaryLight;
+        }
+    }
+}
+
+.popup-boot-machine-dark {}

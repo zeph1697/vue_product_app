@@ -1,0 +1,99 @@
+@import "@/assets/scss/base.scss";
+
+.pagination {
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: right;
+
+    font-size: 0.8rem;
+
+    .page-size,
+    .go-to,
+    .description {
+        margin-left: 1rem;
+    }
+
+    .page-size {
+        margin-right: 1rem;
+    }
+
+    .page-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+
+        cursor: pointer;
+
+        font-weight: 600;
+    }
+
+    .page-item.selected {
+        cursor: default;
+    }
+
+    .control-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+
+        cursor: pointer;
+
+        img {
+            height: 0.525rem;
+        }
+    }
+
+    .control-icon-2-backward {
+        background: url(@/assets/icons/pagination/three-dots.svg) center center / auto 0.525rem no-repeat;
+    }
+
+    .control-icon-2-backward:hover {
+        background: url(@/assets/icons/pagination/chevron-backward-2.svg) center center / auto 0.525rem no-repeat;
+
+        filter: invert(32%) sepia(100%) saturate(3235%) hue-rotate(201deg) brightness(103%) contrast(104%);
+    }
+
+    .control-icon-2-forward {
+        background: url(@/assets/icons/pagination/three-dots.svg) center center / auto 0.525rem no-repeat;
+    }
+
+    .control-icon-2-forward:hover {
+        background: url(@/assets/icons/pagination/chevron-forward-2.svg) center center / auto 0.525rem no-repeat;
+
+        filter: invert(32%) sepia(100%) saturate(3235%) hue-rotate(201deg) brightness(103%) contrast(104%);
+    }
+}
+
+.pagination-light {
+
+    .description {
+        color: $secondaryLight;
+    }
+
+    .page-item:hover {
+        color: $BlueLight;
+    }
+
+    .page-item.selected {
+        color: $BlueLight;
+    }
+
+    .control-icon:hover {
+
+        img {
+            filter: invert(32%) sepia(100%) saturate(3235%) hue-rotate(201deg) brightness(103%) contrast(104%);
+        }
+    }
+
+    .control-icon.disabled {
+        pointer-events: none;
+        opacity: 0.25;
+    }
+}
+
+.pagination-dark {}

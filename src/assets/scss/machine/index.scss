@@ -1,0 +1,80 @@
+@import "../base.scss";
+
+.machine-container {
+    padding: 7.5rem 3rem 0 3rem;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    min-height: 100vh;
+
+    font-family: "SF Pro Text Regular";
+
+    .list {
+        margin-top: 1.25rem;
+
+        .item {
+            display: flex;
+            flex: 1 1 auto;
+            margin: 1rem;
+            padding: 1rem;
+            align-items: center;
+
+            border-radius: 10px;
+
+            img {
+                height: 7rem;
+                opacity: 0.25;
+                align-items: center
+            }
+
+            .detail {
+                display: flex;
+                flex: 1 1 auto;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 1rem;
+                height: 6.5rem;
+
+                .name {
+                    font-size: 1rem
+                }
+
+                .info {
+                    font-size: 0.8rem;
+                }
+
+                .action {
+                    height: 1.6rem
+                }
+            }
+        }
+    }
+}
+
+.machine-container-light {
+    color: black;
+
+    .list {
+
+        .item {
+            background-color: $white;
+
+            box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+
+            .detail {
+
+                .name {
+                    color: $black;
+                }
+
+                .info {
+                    color: $secondaryLight;
+                }
+            }
+        }
+    }
+}
+
+.machine-container-dark {
+    color: #d0d2d6;
+}

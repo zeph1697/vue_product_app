@@ -1,0 +1,51 @@
+@import "@/assets/scss/base.scss";
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+
+    .label {
+        margin-bottom: 0.5rem;
+
+        font-size: 0.85rem;
+    }
+
+    input[type=text] {
+        display: inline-block;
+
+        font-size: 0.85rem;
+
+        outline: 1.5px solid transparent;
+        border-radius: 3px;
+        box-sizing: border-box;
+
+        border-color: transparent;
+    }
+
+    .prefix-icon {}
+
+    .subfix-icon {}
+}
+
+.textbox-light {
+
+    .prefix-icon {}
+
+    .subfix-icon {}
+
+    input[type=text] {
+        background-color: $white;
+        outline-color: $Gray5Light;
+    }
+
+    input[type=text]:focus-visible {
+        outline-color: $BlueLight;
+    }
+}
+
+.textbox-dark {
+
+    .prefix-icon {}
+
+    .subfix-icon {}
+}

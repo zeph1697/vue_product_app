@@ -1,0 +1,135 @@
+@import "@/assets/scss/base.scss";
+
+.table-container {
+    overflow: auto;
+    height: 100%;
+    padding: 0 0.35rem 0 0.2rem;
+    margin: 0 0.3rem 0 0.2rem;
+}
+
+.table {
+    position: relative;
+    border-collapse: collapse;
+
+    td,
+    th {
+        &.v-center {
+            vertical-align: middle;
+        }
+    }
+
+    thead {
+
+        th {
+            border: none;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+            button {
+                margin-top: 0.5rem;
+                border: 0px solid transparent;
+                background-color: transparent;
+                height: 2rem;
+            }
+        }
+    }
+
+    tbody {
+
+        tr {
+
+            td {
+                height: 3.25rem;
+
+                border-top: 1px solid transparent;
+
+                .table-text {
+                    font-size: 0.85rem;
+                }
+
+                .table-last-modified-at {
+                    font-size: 0.85rem;
+                }
+
+                transition: background-color 0.25s linear;
+            }
+        }
+    }
+}
+
+.table-light {
+
+    thead {
+
+        th {
+            background-color: $white;
+
+            button {
+                color: $secondaryLight;
+            }
+
+            button:hover {
+                color: $black;
+            }
+        }
+    }
+
+    tbody {
+
+        tr {
+            background-color: $white;
+
+            td {
+                background-color: $white;
+
+                border-color: $Gray6Light;
+
+                .table-last-modified-at {
+                    color: $secondaryLight;
+                }
+            }
+        }
+
+        tr:hover {
+
+            td {
+                background-color: #FCFCFD;
+            }
+        }
+    }
+}
+
+.table-dark {
+
+    thead {
+
+        th {
+            background-color: white;
+        }
+    }
+
+    tbody {
+
+        tr {
+            background-color: $white;
+
+            td {
+                background-color: $white;
+
+                border-color: $Gray6Light;
+
+                .table-last-modified-at {
+                    color: $secondaryLight;
+                }
+            }
+        }
+
+        tr:hover {
+
+            td {
+                background-color: #FCFCFD;
+            }
+        }
+    }
+}

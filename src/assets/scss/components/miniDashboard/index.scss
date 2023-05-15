@@ -1,0 +1,36 @@
+@import "@/assets/scss/base.scss";
+
+.mini-dashboard-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 15rem;
+    height: 5rem;
+    padding: 1rem;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    .title {
+        font-size: 0.85rem;
+    }
+
+    .value {
+        margin-top: 0.65rem;
+
+        font-size: 1.25rem;
+    }
+}
+
+.mini-dashboard-item-light {
+
+    background-color: $white;
+
+    .title {
+        color: $secondaryLight;
+    }
+
+    .value {}
+}
+
+.mini-dashboard-item-dark {}

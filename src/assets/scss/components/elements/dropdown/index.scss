@@ -1,0 +1,26 @@
+@import "@/assets/scss/base.scss";
+
+.dropdown {
+    display: flex;
+    padding: 0.25rem 0.75rem;
+
+    font-size: 0.8rem;
+
+    outline: 2px solid transparent;
+    border-radius: 3px;
+
+    border-color: transparent;
+
+    cursor: pointer;
+
+    option {
+        background-color: $white;
+    }
+}
+
+.dropdown-light {
+    background-color: $white;
+    outline-color: $Gray5Light;
+}
+
+.dropdown-dark {}

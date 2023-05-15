@@ -1,0 +1,524 @@
+@import "../base.scss";
+
+.home-container {
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    min-height: 100vh;
+
+    font-family: "SF Pro Text Regular";
+
+    .home-container-secondary {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 7.5rem 3rem 2rem 3rem;
+
+        .item {
+            display: flex;
+            padding: 1rem;
+
+            .content {
+                display: flex;
+                flex: 1 1 auto;
+                min-height: 10rem;
+                padding: 1.25rem 1.5rem;
+
+                border: 0px solid;
+                border-radius: 5px;
+
+                .widget-label {}
+
+                .widget-detail {
+                    color: $BlueDark;
+
+                    font-size: 0.85rem;
+
+                    cursor: pointer;
+                }
+
+                .widget-detail:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+
+        .user {
+
+            .intro {
+
+                .intro-title {
+                    font-size: 1.3rem;
+                }
+
+                .intro-description {
+                    margin-top: 1rem;
+
+                    font-size: 0.85rem;
+                }
+            }
+
+            .account {
+                margin-top: 2rem;
+
+                .balance-info {
+
+                    .total {
+                        font-size: 1.4rem;
+                    }
+
+                    .action {
+                        margin-left: 1rem;
+                    }
+                }
+
+                .view-account {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .statistics {
+
+            .main {
+                padding: 1rem 4rem 0rem 4rem;
+
+                .statistics-detail {
+                    margin-left: 1.5rem;
+
+                    .value {
+                        font-size: 1.1rem;
+                    }
+
+                    .unit {
+                        margin-top: 0.25rem;
+
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+
+        .machine {
+
+            .main {
+                flex: 1 1 auto;
+                margin-top: 1.5rem;
+
+                font-size: 0.8rem;
+
+                .element {
+
+                    .name {}
+
+                    .status {
+
+                        .status-text {}
+
+                        .point {
+                            width: 0.6rem;
+                            height: 0.65rem;
+                            margin-left: 0.75rem;
+
+                            border-radius: 0.325rem;
+                        }
+                    }
+
+                    .divided {
+                        margin: 0.75rem 0 0.85rem 0;
+                        height: 1px;
+                    }
+                }
+            }
+        }
+
+        .server {}
+
+        .promotion {
+            height: 20rem;
+
+            .content {
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+        }
+
+        .storage {
+
+            .used {
+                font-size: 1.2rem;
+            }
+
+            .threshold {
+                font-size: 0.85rem;
+            }
+
+            .divided {
+                margin: 0 0.5rem;
+
+                font-size: 0.85rem;
+            }
+
+            .description {
+                margin-top: 1rem;
+
+                font-size: 0.85rem;
+            }
+
+            .notify {
+                margin-top: 0.75rem;
+
+                font-size: 0.85rem;
+            }
+
+            .action {
+                margin-top: 0.75rem;
+
+                .expand {
+                    font-size: 0.85rem;
+                }
+            }
+
+            .icon {}
+
+            .status {
+                font-size: 0.8rem;
+            }
+        }
+
+        .survey {
+
+            .main {
+                font-size: 0.85rem;
+
+                margin-top: 1.5rem;
+
+                .quest {}
+
+                .answer {
+                    margin-top: 1rem;
+
+                    .survey-answer-detail {}
+                }
+            }
+        }
+
+        .usage-history {
+
+            .main {
+                flex: 1 1 auto;
+                margin-top: 1.5rem;
+
+                font-size: 0.85rem;
+
+                .element {
+
+                    .name {
+                        margin-left: 0.5rem;
+                    }
+
+                    .description {
+                        font-size: 0.8rem;
+                    }
+
+                    .value {
+                        display: flex;
+                        width: 7.5rem;
+                        justify-content: end;
+
+                        font-size: 0.9rem;
+                    }
+
+                    .time {
+                        display: flex;
+                        width: 10rem;
+                        justify-content: end;
+
+                        font-size: 0.8rem;
+                    }
+
+                    .divided {
+                        margin: 0.75rem 0 0.85rem 0;
+                        height: 1px;
+                    }
+                }
+            }
+        }
+
+        .transaction {
+
+            .main {
+                flex: 1 1 auto;
+                margin-top: 1.5rem;
+
+                font-size: 0.85rem;
+
+                .element {
+
+                    .name {
+                        margin-left: 0.5rem;
+                    }
+
+                    .value {
+                        font-size: 0.9rem;
+                    }
+
+                    .divided {
+                        margin: 0.75rem 0 0.85rem 0;
+                        height: 1px;
+                    }
+                }
+            }
+        }
+
+        .intro-service {
+
+            .main {
+                margin: 1rem 0.5rem 0 0.5rem;
+
+                .title {}
+
+                .step {
+                    display: flex;
+                    flex: 1 1 auto;
+                    flex-direction: column;
+                    margin-top: 2rem;
+
+                    .step-item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        min-height: 9rem;
+                        padding: 1.5rem;
+                        margin-bottom: 1.5rem;
+
+                        border: 2px solid #48484a;
+                        border-radius: 10px;
+
+                        .step-item-title {
+                            font-size: 0.85rem;
+                        }
+
+                        .step-item-content {
+                            margin-top: 0.75rem;
+
+                            font-size: 0.85rem;
+
+                            .step-item-content-title {
+                                margin-top: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-container-light {
+    color: black;
+
+    .item {
+
+        .content {
+            background-color: $white;
+
+            .widget-label {
+                color: $secondaryLight;
+            }
+
+            .label {}
+
+            .detail {
+                color: $BlueLight;
+            }
+        }
+    }
+
+    .machine {
+
+        .main {
+
+            .element {
+
+                .name {}
+
+                .status {
+
+                    .status-text {
+                        color: $secondaryLight;
+                    }
+                }
+
+                .divided {
+                    background-color: $Gray6Light;
+                }
+            }
+        }
+    }
+
+    .storage {
+
+        .description {
+            color: $secondaryLight;
+        }
+
+        .notify {
+            color: $OrangeLight;
+        }
+
+        .action {
+
+            .expand {
+                color: $BlueLight;
+            }
+        }
+
+        .status {
+            color: $BlueLight;
+        }
+    }
+}
+
+.home-container-dark {
+    color: #d0d2d6;
+
+    .item {
+
+        .content {
+            background-color: $Gray5Dark;
+
+            .label {}
+
+            .detail {
+                color: $BlueDark;
+            }
+        }
+    }
+
+    .statistics {
+
+        .main {
+
+            .statistics-detail {
+
+                .unit {
+                    color: $secondaryDark;
+                }
+            }
+        }
+    }
+
+    .machine {
+
+        .main {
+
+            .element {
+
+                .name {}
+
+                .status {
+
+                    .status-text {
+                        color: $secondaryDark;
+                    }
+                }
+
+                .divided {
+                    background-color: $Gray4Dark;
+                }
+            }
+        }
+    }
+
+    .storage {
+
+        .description {
+            color: $secondaryDark;
+        }
+
+        .notify {
+            color: $OrangeDark;
+        }
+
+        .action {
+
+            .expand {
+                color: $BlueDark;
+            }
+        }
+
+        .status {
+            color: $BlueDark;
+        }
+    }
+
+    .usage-history {
+
+        .main {
+
+            .element {
+
+                .name {}
+
+                .description {
+
+                    color: $secondaryDark;
+                }
+
+                .value {}
+
+                .time {
+
+                    color: $secondaryDark;
+                }
+
+                .divided {
+                    background-color: $Gray4Dark;
+                }
+            }
+        }
+    }
+
+    .transaction {
+
+        .main {
+
+            .element {
+
+                .divided {
+                    background-color: $Gray4Dark;
+                }
+            }
+        }
+    }
+
+    .intro-service {
+
+        .main {
+
+            .title {}
+
+            .step {
+
+                .step-item {
+
+                    .step-item-title {}
+
+                    .step-item-content {
+
+                        .step-item-content-title {
+                            color: $secondaryDark;
+                        }
+
+                        .url {
+                            color: $BlueDark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

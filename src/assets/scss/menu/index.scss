@@ -1,0 +1,215 @@
+@import "../base.scss";
+
+.menu-container {
+    flex: 0 0 16rem;
+
+    font-size: 0.85rem;
+    font-family: "SF Pro Text Regular";
+    text-decoration: none;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .logo {
+
+        img {
+            width: 7rem
+        }
+    }
+
+    .menu {
+        margin: 0 1rem;
+        padding-left: 0;
+
+        .title {
+            margin: 1.5rem 0 0.75rem 0;
+            padding: 0 1rem;
+
+            user-select: none;
+
+            font-size: 0.85rem;
+        }
+
+        a {
+            display: flex;
+            height: 2.5rem;
+            align-items: center;
+            padding: 0 1rem;
+            margin-bottom: 0.25rem;
+
+            border: 0px solid;
+            border-radius: 0.5rem;
+
+            cursor: pointer;
+
+            text-decoration: none;
+
+            .content {
+                display: flex;
+                align-items: center;
+            }
+
+            .content::before {
+                content: "";
+                width: 17.5px;
+                height: 17.5px;
+                float: left;
+                margin: 0 0.75rem 0.1rem 0;
+            }
+
+            .download::before {
+                background: url(@/assets/icons/menu/DownloadOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .api::before {
+                background: url(@/assets/icons/menu/ApiOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .home::before {
+                background: url(@/assets/icons/menu/HomeOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .payment::before {
+                background: url(@/assets/icons/menu/PaymentOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .machine::before {
+                background: url(@/assets/icons/menu/MachineOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .billing::before {
+                background: url(@/assets/icons/menu/BillingOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .task::before {
+                background: url(@/assets/icons/menu/TaskOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .document::before {
+                background: url(@/assets/icons/menu/DocumentOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .support::before {
+                background: url(@/assets/icons/menu/SupportOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .new::before {
+                background: url(@/assets/icons/menu/NewOutline.svg) center center / 17.5px 17.5px no-repeat;
+            }
+        }
+
+        .router-link-active {
+
+            .download::before {
+                background: url(@/assets/icons/menu/DownloadFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .api::before {
+                background: url(@/assets/icons/menu/ApiFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .home::before {
+                background: url(@/assets/icons/menu/HomeFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .payment::before {
+                background: url(@/assets/icons/menu/PaymentFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .machine::before {
+                background: url(@/assets/icons/menu/MachineFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .billing::before {
+                background: url(@/assets//icons/menu/BillingFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .task::before {
+                background: url(@/assets/icons/menu/TaskFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .document::before {
+                background: url(@/assets/icons/menu/DocumentFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .support::before {
+                background: url(@/assets/icons/menu/SupportFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+
+            .new::before {
+                background: url(@/assets/icons/menu/NewFill.svg) center center / 17.5px 17.5px no-repeat;
+            }
+        }
+    }
+}
+
+.menu-container-light {
+    color: #565360;
+    background-color: $white;
+    box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+
+    .menu {
+
+        .title {
+            color: $Gray2Light;
+        }
+
+        a {
+
+            div {
+                color: #565360;
+            }
+
+            .content::before {
+                filter: invert(34%) sepia(5%) saturate(1255%) hue-rotate(213deg) brightness(85%) contrast(81%);
+            }
+        }
+
+        a:hover {
+            background-color: $Gray6Light;
+        }
+
+        .router-link-active {
+            background-color: #E8F3FF;
+
+            div {
+                color: $BlueLight;
+            }
+
+            .content::before {
+                filter: invert(35%) sepia(79%) saturate(4400%) hue-rotate(201deg) brightness(103%) contrast(106%);
+            }
+        }
+    }
+}
+
+.menu-container-dark {
+    color: #d0d2d6;
+    background-color: $Gray5Dark;
+
+    .menu {
+
+        .title {
+            color: #676d7d;
+        }
+
+        a {
+
+            div {
+                color: #d0d2d6;
+            }
+        }
+
+        a:hover {
+            background-color: $Gray6Dark;
+        }
+
+        .router-link-active {
+            background-color: $Gray5Dark;
+
+            div {
+                color: $BlueDark;
+            }
+        }
+    }
+}

@@ -1,0 +1,226 @@
+@import "@/assets/scss/base.scss";
+
+.popup-create-image {
+    height: 36rem;
+
+    .select-package {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        width: 80rem;
+
+        .popup-body {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+
+            .category {}
+
+            .content {
+                display: flex;
+                flex: 1 1 auto;
+                margin: 0.5rem -0.5rem 0 -0.5rem;
+
+                .item {
+                    display: flex;
+                    flex: 1 1 auto;
+                    padding: 1rem;
+                    margin: 0 0.5rem;
+                    max-width: 50%;
+                    flex-direction: column;
+
+                    border: 2px solid transparent;
+                    border-radius: 10px;
+
+                    cursor: pointer;
+
+                    -webkit-transition: color 0.25s linear;
+                    -webkit-transition: background-color 0.25s linear;
+                    -webkit-transition: border-color 0.25s linear;
+
+                    .name,
+                    .price {
+                        font-family: Montserrat;
+                    }
+
+                    .name {
+                        display: flex;
+                        font-size: 1.5rem;
+                        padding: 0 1rem;
+                        width: 10rem;
+
+                        .first {
+                            margin-right: 0.5rem;
+                        }
+
+                        .last {
+                            font-family: Montserrat;
+                        }
+                    }
+
+                    .price {
+                        display: flex;
+                        font-size: 1.5rem;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .first {
+                            font-size: 2rem;
+                        }
+
+                        .last {
+                            margin-right: 0.75rem;
+
+                            font-size: 1.25rem;
+                        }
+
+                        .unit {
+                            margin-right: 1rem;
+
+                            font-size: 0.85rem
+                        }
+                    }
+
+                    .option {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 1rem;
+                        margin-left: 0.25rem;
+
+                        font-size: 0.85rem;
+
+                        .title {
+                            width: 8.5rem;
+                        }
+
+                        .title::before {
+                            content: "•";
+
+                            margin-right: 0.3rem;
+                        }
+
+                        .value {
+                            word-wrap: break-word;
+                        }
+                    }
+                }
+            }
+        }
+
+        .popup-footer {
+            margin-top: 1rem;
+        }
+    }
+
+    .settings {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        width: 40rem;
+        height: 100%;
+        font-size: 0.85rem;
+
+        .popup-body {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            height: 100%;
+            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: overlay;
+            margin-left: 0.5rem;
+
+            .detail {
+                margin-right: 1.5rem;
+
+                .item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .item-title {
+                        display: flex;
+                        flex: 1 1 auto;
+                    }
+                }
+            }
+        }
+
+        .popup-footer {
+            margin-top: 1rem;
+        }
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        width: 40rem;
+        height: 100%;
+        font-size: 0.85rem;
+
+        .popup-body {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            height: 100%;
+            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: overlay;
+            margin-left: 0.5rem;
+        }
+
+        .popup-footer {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.popup-create-image-light {
+
+    .select-package {
+
+        .popup-body {
+
+            .item {
+                box-shadow: 0 4px 24px 0 rgb(34 41 47 / 20%);
+
+                .name {
+                    margin-bottom: 0.5rem;
+
+                    color: $black;
+                }
+
+                .price {
+
+                    .first {
+                        color: $BlueLight;
+                    }
+
+                    .last {
+                        color: $BlueLight;
+                    }
+
+                    .unit {
+                        color: $black;
+                    }
+                }
+
+                .option {
+
+                    .title {
+                        color: $secondaryLight;
+                    }
+
+                    .value {}
+                }
+            }
+
+            .item:hover {
+                border-color: $OrangeLight;
+            }
+        }
+    }
+}
+
+.popup-create-image-dark {}

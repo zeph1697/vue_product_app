@@ -1,0 +1,45 @@
+@import "../base.scss";
+
+.starter-container {
+    display: flex;
+    flex-direction: row;
+
+    .promotion {
+        width: 60%;
+        height: 100%;
+        padding: 0;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: contain;
+        box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+    }
+
+    .action {
+        margin-right: 0.2rem;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.5rem;
+
+        font-size: 0.85rem;
+    }
+}
+
+.starter-container-light {
+    background-color: $white;
+
+    .copyright {
+        color: $secondaryLight;
+    }
+}
+
+.starter-container-dark {
+    background-color: $black;
+}

@@ -1,0 +1,69 @@
+@import "@/assets/scss/base.scss";
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+    border: 0px solid;
+}
+
+.button:hover {
+    opacity: 0.75;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.button-light {}
+
+.button-dark {}
+
+.button-link {
+    border: 0px;
+    padding: 0;
+}
+
+.button-link:hover {
+    opacity: 0.75;
+}
+
+.button-link:disabled {
+    opacity: 0.5;
+}
+
+.button-link-light {}
+
+.button-link-dark {}
+
+.lds-dual-ring {
+    display: inline-block;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.lds-dual-ring-light:after,
+.lds-dual-ring-dark:after {
+    border: 2px solid $white;
+    border-color: $white transparent $white transparent;
+}
+
+.lds-dual-ring-outline-light:after {
+    border: 2px solid $BlueLight;
+    border-color: $BlueLight transparent $BlueLight transparent;
+}
+
+.lds-dual-ring-outline-dark:after {
+    border: 2px solid $BlueDark;
+    border-color: $BlueDark transparent $BlueDark transparent;
+}

@@ -1,0 +1,118 @@
+@import "@/assets/scss/base.scss";
+
+.popup-detail-machine {
+    display: flex;
+    flex: 1 1 auto;
+    width: 52rem;
+    height: 35rem;
+
+    .tabs {
+
+        .tab-control {
+            flex: 0 0 10rem;
+            margin-right: 1rem;
+        }
+
+        .machine-setting {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            padding: 0 0 1rem 0.1rem;
+            height: 100%;
+            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: overlay;
+        }
+
+        .category {
+
+            .detail {
+
+                .item {
+                    flex-direction: row;
+                }
+            }
+        }
+
+        .machine-setting {
+
+            .detail {
+
+                .action {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 6rem;
+                    margin-right: 0.5rem;
+
+                    cursor: pointer;
+
+                    img {
+                        height: 2.5rem;
+                        opacity: 0.25
+                    }
+
+                    .title-action {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 0.5rem;
+                    }
+                }
+
+                .action:hover {
+                    opacity: 0.75;
+                }
+
+                .item {
+                    display: flex;
+                    flex: 1 1 auto;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .item-title {
+                        display: flex;
+                        flex: 1 1 auto;
+                    }
+
+                    .loading {
+                        margin-right: 1rem;
+                    }
+                }
+
+                .caution {
+                    margin-bottom: 1rem;
+
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+.popup-detail-machine-light {
+
+    .tabs {
+
+        .machine-setting {
+
+            .detail {
+
+                .action {
+
+                    .title-action {
+                        color: $black;
+                    }
+                }
+
+                .caution {
+                    color: $RedLight;
+                }
+            }
+        }
+    }
+}
+
+.popup-detail-machine-dark {
+
+    .item {}
+}

@@ -1,0 +1,26 @@
+@import "@/assets/scss/base.scss";
+
+.machine-information {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0 0 0 0.1rem;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: overlay;
+
+    .category {
+
+        .detail {
+
+            .item {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+.machine-information-light {}
+
+.machine-information-dark {}

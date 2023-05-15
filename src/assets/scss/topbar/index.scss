@@ -1,0 +1,89 @@
+@import "../base.scss";
+
+.topbar-container {
+    display: flex;
+    margin: 0 4rem;
+    padding-top: 1.5rem;
+    left: 0;
+    right: 0;
+    height: 6rem;
+    z-index: 1;
+
+    font-family: "SF Pro Text Regular";
+
+    .content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        border: 0px solid;
+        border-radius: 0.5rem;
+
+        .new {
+            display: flex;
+            flex-direction: row;
+            margin-left: 2.5rem;
+            align-items: center;
+
+            font-size: 0.85rem;
+
+            .title {}
+
+            .action {
+                margin-left: 0.75rem;
+            }
+        }
+
+        .center-notify {
+            margin-right: 2.5rem;
+
+            img {
+                width: 3.25rem;
+                height: 3.25rem;
+                flex-shrink: 0;
+                min-width: 100%;
+                min-height: 100%;
+
+                border: 2px solid white;
+                border-radius: 1.625rem;
+            }
+        }
+    }
+}
+
+.topbar-container-light {
+    color: #d0d2d6;
+    background-color: $Gray6Light;
+
+    .content {
+        background-color: $white;
+
+        box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+
+        .new {
+
+            .title {
+                color: $black;
+            }
+        }
+    }
+}
+
+.topbar-container-dark {
+    color: #d0d2d6;
+    background-color: rgba(28, 28, 30, 0.85);
+
+    .content {
+        background-color: $Gray5Dark;
+
+        box-shadow: 0 4px 24px 0 rgb(20 20 22 / 50%);
+
+        .new {
+
+            .title {
+                color: $white;
+            }
+        }
+    }
+}

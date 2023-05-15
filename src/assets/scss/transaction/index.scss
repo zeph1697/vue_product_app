@@ -1,0 +1,60 @@
+@import "../base.scss";
+
+.transaction-container {
+    padding: 7.5rem 4rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: overlay;
+
+    font-family: "SF Pro Text Regular";
+
+    border-radius: 10px;
+
+    .title-page {
+        font-size: 1.25rem;
+    }
+
+    .description-page {
+        margin-top: 0.5rem;
+
+        font-size: 0.85rem;
+    }
+
+}
+
+.transaction-container-light {
+    color: black;
+
+    .description-page {
+        color: $secondaryLight;
+    }
+}
+
+.transaction-container-dark {
+    color: #d0d2d6;
+}
+
+.transaction-short-container {
+    display: flex;
+    flex: 1 1 auto;
+    margin-top: 1.5rem;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: overlay;
+
+    font-family: "SF Pro Text Regular";
+
+    border-radius: 10px;
+}
+
+.transaction-short-container-light {
+    color: black;
+    background-color: $white;
+}
+
+.transaction-short-container-dark {
+    color: #d0d2d6;
+}

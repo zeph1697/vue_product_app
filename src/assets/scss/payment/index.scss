@@ -1,0 +1,124 @@
+@import "../base.scss";
+
+.payment-container {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 7.5rem 4rem 1.5rem 4rem;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    min-height: 100vh;
+
+    font-family: "SF Pro Text Regular";
+}
+
+.payment-container-light {
+    color: black;
+}
+
+.payment-container-dark {
+    color: #d0d2d6;
+}
+
+.payment-manual {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 7.5rem 4rem 1.5rem 4rem;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    min-height: 100vh;
+
+    font-family: "SF Pro Text Regular";
+
+    .description,
+    .item {
+        border-radius: 10px;
+    }
+
+    .description {
+        margin-top: 1.5rem;
+        padding: 1rem 1.5rem;
+
+        font-size: 0.85rem;
+    }
+
+    .item {
+        display: flex;
+        margin-top: 1.5rem;
+        padding: 2rem 0;
+        min-height: 10rem;
+
+        .logo {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            width: 25%;
+            min-width: 20rem;
+
+            border-right: 2px solid transparent;
+
+            img {
+                width: 15rem;
+            }
+        }
+
+        .info {
+            margin-left: 2.5rem;
+
+            font-size: 0.85rem;
+        }
+
+        .payoneer {
+
+            .text-description {
+                margin-top: 0.75rem;
+            }
+        }
+
+        .bank {
+
+            .title,
+            .content {
+                height: 4.5rem;
+            }
+
+            .content {
+                margin-left: 3rem;
+            }
+        }
+    }
+}
+
+.payment-manual-light {
+
+    .description,
+    .item {
+        background-color: $white;
+
+        box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+
+        .logo {
+            border-color: $Gray5Light;
+        }
+
+        .info {
+
+            .text-label {
+                color: $black;
+            }
+
+            .text-description {
+                color: $secondaryLight;
+            }
+        }
+    }
+
+    .description {
+        color: $secondaryLight;
+    }
+}
+
+.payment-manual-dark {}

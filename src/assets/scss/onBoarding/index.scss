@@ -1,0 +1,104 @@
+@import "../base.scss";
+
+.on-boarding {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99901;
+
+    .on-boarding-highlight {
+        width: 100%;
+        border-radius: 5px;
+        position: absolute;
+        box-shadow: 0 0 0 5000px rgb(0 0 0 / 50%);
+    }
+
+    .on-boarding-tips {
+        position: absolute;
+        padding: 0.9rem 1rem;
+
+        background-color: $white;
+
+        border-radius: 5px;
+
+        .on-boarding-title {
+            font-size: 1rem;
+        }
+
+        .on-boarding-content {
+            margin: 0.75rem 0;
+
+            font-size: 0.85rem;
+        }
+
+        .on-boarding-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.on-boarding-create-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .on-boarding-highlight-create-button {
+        top: 7rem;
+        left: 19.5rem;
+        width: 12rem;
+        height: 4rem;
+    }
+
+    .on-boarding-tip-create-button {
+        top: 12rem;
+        left: 19.5rem;
+        width: 20rem;
+    }
+}
+
+.on-boarding-boot-machine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .on-boarding-tip-boot-machine {
+        margin: 19rem 0 0 20rem;
+        width: 20rem;
+    }
+}
+
+.on-boarding-intro-machine {
+    display: flex;
+
+    .on-boarding-highlight-intro-machine {
+        margin: 11rem 0 0 19rem;
+        height: 11.5rem;
+    }
+}
+
+.on-boarding-connect-machine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .on-boarding-highlight-connect-machine-tip-connect {
+        margin: 11.75rem 0 0 28rem;
+        width: 12rem;
+        height: 4rem;
+    }
+
+    .on-boarding-highlight-connect-machine-tip-other-server {
+        margin: 11.75rem 0 0 11rem;
+        width: 7rem;
+        height: 3rem;
+    }
+
+    .on-boarding-tip-connect-machine {
+        margin: 27rem 0 0 20rem;
+        width: 20rem;
+    }
+}
